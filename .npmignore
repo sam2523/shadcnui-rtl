@@ -3,7 +3,9 @@ tests/
 *.test.js
 *.spec.js
 __tests__/
-
+coverage/
+.nyc_output/
+*.lcov
 # Development files
 .github/
 .vscode/

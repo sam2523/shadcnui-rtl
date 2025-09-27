@@ -1,7 +1,7 @@
 {
   "name": "shadcnui-rtl",
   "version": "1.0.0",
-  "description": "Transform shadcn/ui components to RTL - One command, full Arabic/Hebrew support",
+  "description": "Transform shadcn/ui components to RTL - One command, full Arabic/farsi/urdu support",
   "author": "Saleh <Saleh7@protonmail.ch>",
   "main": "index.js",
   "bin": {

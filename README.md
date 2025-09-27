@@ -5,7 +5,7 @@
 
 > One-command RTL transformation for shadcn/ui components
 
-Transform your shadcn/ui components to full RTL support with a single command. Perfect for Arabic, Hebrew, Persian, Urdu, and other RTL language applications.
+Transform your shadcn/ui components to full RTL support with a single command. Perfect for Arabic, Persian, Urdu, and other RTL language applications.
 
 ## ✨ Features
 
