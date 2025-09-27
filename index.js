@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * shadcn-rtl-transform
+ * shadcnui-rtl
  * 
  * A comprehensive utility for transforming shadcn/ui components to support RTL layouts
  * by converting Tailwind CSS classes from LTR to RTL logical properties.
@@ -535,14 +535,16 @@ function displayHelp() {
 
   const banner = `
 ${divider}
-         ${icon}shadcn RTL Transform - Version 1.0.0
+         ${icon}shadcn RTL Transform - Version 1.0.1
      Convert shadcn/ui components to RTL automatically
 ${divider}`;
 
   console.log(banner);
   console.log(`
 USAGE:
-  node index.js [options]
+  shadcnui-rtl [options]
+  npx shadcnui-rtl [options]
+  scnrtl [options]
 
 OPTIONS:
   --path, -p <dir>     Path to components directory 
@@ -564,25 +566,28 @@ OPTIONS:
 
 EXAMPLES:
   # Transform all components in default directory
-  node index.js
+  shadcnui-rtl
 
   # Transform with custom path
-  node index.js --path ./src/components
+  shadcnui-rtl --path ./src/components
 
   # Preview changes without modifying
-  node index.js --dry-run
+  shadcnui-rtl --dry-run
 
   # Create backups before transformation
-  node index.js --backup
+  shadcnui-rtl --backup
 
   # Plain text output (no emoji icons)
-  node index.js --no-icons
+  shadcnui-rtl --no-icons
 
   # Skip rotating directional icons
-  node index.js --no-rotate-icons
+  shadcnui-rtl --no-rotate-icons
 
   # Exclude specific files
-  node index.js --exclude "dialog.tsx,modal.tsx"
+  shadcnui-rtl --exclude "dialog.tsx,modal.tsx"
+
+  # Using npx (no installation required)
+  npx shadcnui-rtl --path ./components
 
 ICON ROTATION:
   By default, the following icons will be rotated 180° in RTL:
@@ -706,7 +711,7 @@ async function main() {
   } catch {
     console.error(formatMessage("error", `Directory not found: ${componentsDirectory}`));
     console.log(formatMessage("tip", "Use --path to specify the correct components directory"));
-    console.log(`   Example: node index.js --path ./src/components\n`);
+    console.log(`   Example: shadcnui-rtl --path ./src/components\n`);
     process.exit(1);
   }
 
@@ -818,7 +823,15 @@ process.on("SIGINT", () => {
 // ========================
 
 // Only run main if this file is executed directly (not imported)
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Check if being run as a script (has shebang and is executable)
+const isMainModule = process.argv[1] && (
+  import.meta.url === `file://${process.argv[1]}` ||
+  import.meta.url.endsWith('/index.js') ||
+  process.argv[1].endsWith('shadcnui-rtl') ||
+  process.argv[1].endsWith('scnrtl')
+);
+
+if (isMainModule) {
   main().catch((error) => {
     console.error("\n❌ Fatal error:", error.message);
 
