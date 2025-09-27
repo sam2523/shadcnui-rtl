@@ -1,0 +1,66 @@
+test/
+tests/
+*.test.js
+*.spec.js
+__tests__/
+
+# Development files
+.github/
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+
+# Config files
+.eslintrc*
+.prettierrc*
+.editorconfig
+tsconfig.json
+jest.config.*
+.babelrc*
+
+# Documentation
+docs/
+examples/
+*.md
+!README.md
+
+# Source control
+.git/
+.gitignore
+.gitattributes
+
+# Package managers
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+!package.json
+
+# Build files
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Temp files
+*.tmp
+*.temp
+*.backup
+.cache/
+tmp/
+temp/
+
+# OS files
+Thumbs.db
+Desktop.ini

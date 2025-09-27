@@ -1,0 +1,51 @@
+{
+  "name": "shadcnui-rtl",
+  "version": "1.0.0",
+  "description": "Transform shadcn/ui components to RTL - One command, full Arabic/Hebrew support",
+  "author": "Saleh <Saleh7@protonmail.ch>",
+  "main": "index.js",
+  "bin": {
+    "shadcnui-rtl": "index.js",
+    "scnrtl": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saleh7/shadcnui-rtl.git"
+  },
+  "keywords": [
+    "shadcn",
+    "shadcn-ui",
+    "shadcnui",
+    "rtl",
+    "right-to-left",
+    "arabic",
+    "farsi",
+    "urdu",
+    "tailwind",
+    "tailwindcss",
+    "transform",
+    "react",
+    "cli"
+  ],
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Saleh7/shadcnui-rtl/issues"
+  },
+  "homepage": "https://github.com/Saleh7/shadcnui-rtl#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.1.3"
+  }
+}
